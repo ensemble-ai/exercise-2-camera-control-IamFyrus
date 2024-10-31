@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
 	# Make the camera view the target from above
 	rotation_degrees = Vector3(-90, 0, 0)
 	
+	# Keep leash on target
 	if dist_to_target > leash_distance:
 		global_position = global_position.lerp(target_position, follow_speed * delta)
 	else:

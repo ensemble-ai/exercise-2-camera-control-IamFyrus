@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 	# Make the camera view the target from above
 	rotation_degrees = Vector3(-90, 0, 0)
 	
+	# Auto scrolls the camera
 	global_position += scroll_speed
 	
 	

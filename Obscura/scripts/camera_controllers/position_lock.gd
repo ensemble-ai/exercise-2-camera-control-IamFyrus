@@ -18,6 +18,7 @@ func _process(delta: float) -> void:
 	if draw_camera_logic:
 		draw_logic()	
 	
+	# Lock on to target position
 	global_position =  Vector3(target.global_position.x, target.global_position.y + height, target.global_position.z)
 	
 	# Make the camera view the target from above
